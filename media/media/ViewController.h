@@ -7,7 +7,25 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
+#import <messageUI/MFMailComposeViewController.h>
 
-@interface ViewController : UIViewController
+
+@interface ViewController : UIViewController <MFMailComposeViewControllerDelegate>
+{
+//    AVAudioPlayer* _player[6];
+    
+@private
+    UILabel* label_;
+    
+//    BOOL bannerIsVisible;
+//    ADBannerView *adView;
+}
+
+
+-(IBAction) doSendEmail:(id) sender;
+-(void) showComposerSheet;
+-(void) setAlert:(NSString *) aTitle :(NSString *) aDescription;
+
 
 @end

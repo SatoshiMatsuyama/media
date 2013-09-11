@@ -14,10 +14,11 @@
     UITableView* tableView;
 @private
     NSMutableArray* items_;
+    NSMutableArray* details_;
     NSArray* dataSource_;
    
 @protected
-    NSArray* details_;
+//    NSArray* details_;
     UITableViewCellStyle cellStyle_;
 }
 
